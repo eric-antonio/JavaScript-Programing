@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* Comfiguraçãoes padrão do Projecto! */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+}
+
+main{
+    height: 100vh;
+    position: relative;
+    background-color: aquamarine;
+}
+
+section#s1{
+    width: 60vw;
+    height: 300px;
+    text-align: center;
+    padding-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(106, 191, 248);
+    border-radius: 5px;
+
+}
+button{
+    border: none;
+    padding: 10px 10px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  
+}
+#increment-btn{
+    background: darkred;
+}
