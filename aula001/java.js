@@ -1,10 +1,7 @@
+let count = 0
+
 function add(){
-    window.alert(`The Button was cliked`)
+    let msginc = window.document.getElementById("count-el")
+    msginc.innerHTML=count += 1
+    // console.log(count += 1)
 }
-
-
-function countdown(){
-    console.log(42)
-}
-
-countdown()
