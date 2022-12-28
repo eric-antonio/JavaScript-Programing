@@ -40,8 +40,12 @@ button{
     width: 200px;
     margin-bottom: 5px;
     border-radius: 5px;
+    display: inline;
   
 }
 #increment-btn{
     background: darkred;
+}
+#save-btn{
+    background: green;
 }
