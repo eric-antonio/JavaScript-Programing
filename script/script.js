@@ -1,5 +1,4 @@
-let name = "Eric"
-let nofication =  "You Have tree new notifications!"
-let massegeToUser = ` ${name} ${nofication} `
-
-console.log(massegeToUser)
+let name = "Éric"
+let greeting = "Hi, my name is "
+let myGreeting = `${greeting}${name}`
+console.log(myGreeting)
