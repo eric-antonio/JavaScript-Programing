@@ -1,3 +1,5 @@
+let name = "Eric"
 let nofication =  "You Have tree new notifications!"
+let massegeToUser = ` ${name} ${nofication} `
 
-window.alert(nofication)
+console.log(massegeToUser)
