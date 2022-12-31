@@ -1,8 +1,9 @@
 let count = 0
-
+let countEl = window.document.getElementById("count-el")
+let saveEl = window.document.getElementById('save-el')
 
 function add(){
-    let countEl = window.document.getElementById("count-el")
+    
     countEl.innerText= count += 1
 
     /* I can crate a variable and than set the value or just set direct 
@@ -11,7 +12,7 @@ function add(){
 }
 
 function save(){
-    let saveEl = window.document.getElementById('save-el')
+    
     let sum =  count + ` - `
 
     saveEl.innerText += sum
