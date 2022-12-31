@@ -11,6 +11,10 @@ function add(){
 function save(){
     let sum =  count + ` - `
     saveEl.textContent += sum
-   
+    
+    countEl.textContent = 0
+    count = 0
+    
 }
-save()
+
+
