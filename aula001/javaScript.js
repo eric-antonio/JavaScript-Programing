@@ -10,7 +10,7 @@ function add(){
 
 function save(){
     let sum =  count + ` - `
-    saveEl.innerText += sum
+    saveEl.textContent += sum
    
 }
 save()
