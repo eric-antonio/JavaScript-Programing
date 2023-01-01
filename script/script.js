@@ -1,6 +1,5 @@
-let welcomeEl =  window.document.getElementById("welcome-el")
+let firstName  = `Éric`
+let lastName = `António`
 
-let name = "Eric"
-let greeting = "Hi ,my name is "
-welcomeEl.innerText = ` ${greeting} ${name}`
-welcomeEl.innerText += `👍`
+let fullName = `${firstName} ${lastName}`
+console.log(fullName)
