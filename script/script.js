@@ -1,5 +1,7 @@
-let firstName  = `Éric`
-let lastName = `António`
+let name  = `Linda`
+let greeting = `Hi there`
 
-let fullName = `${firstName} ${lastName}`
-console.log(fullName)
+function msg(){
+    console.log( `${greeting}, ${name}!`)
+}
+msg()
