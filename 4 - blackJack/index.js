@@ -1,6 +1,9 @@
-let age = 22
-if( age < 21 ){
-    console.log(`yoc can not enter the club!`)
+let age = 101
+
+if( age === 100){
+    console.log("Here is your birthday card from the king!")
+}else if (age >= 101){
+    console.log("Not elegible, you have already one ")
 }else{
-    console.log(`Welcome`)
+    console.log("Not elegible!")
 }
