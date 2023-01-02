@@ -1,5 +1,5 @@
 let errorParagraph = window.document.getElementById("error")
 
-function btnPucrhase(){
-    errorParagraph.textContent = "Please Try Again "
+function pucrhase(){
+    errorParagraph.textContent = " Something went wrong Please Try Again "
 }
