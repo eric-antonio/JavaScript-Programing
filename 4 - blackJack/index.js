@@ -1,5 +1,5 @@
 let firstCard = 10 
-let secondCard = 7 
+let secondCard = 11 
 let sum =  firstCard + secondCard 
 let hasBlackJack = false
 let isAlive = true
@@ -16,3 +16,4 @@ if ( sum <= 20 ){
 }
  console.log("Win? : "+ hasBlackJack)
  console.log(`In the game? : ` + isAlive)
+ console.log(message)
