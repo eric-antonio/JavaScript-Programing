@@ -17,6 +17,8 @@ function subtract(){
     result.textContent = calculate
 }
 function divide(){
+    calculate = num1 / num2
+    result.textContent = calculate
 
 }
 function multiply(){
