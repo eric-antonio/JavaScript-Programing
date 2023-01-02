@@ -22,5 +22,6 @@ function divide(){
 
 }
 function multiply(){
-
+    calculate =  num1 * num2
+    result.textContent =  calculate
 }
