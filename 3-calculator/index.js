@@ -8,20 +8,20 @@ let result = window.document.getElementById("sum-el")
 
 function add(){
     calculate =  num1 + num2
-    result.textContent = calculate
+    result.textContent = ` Sum : ${calculate}`
 
 }
 
 function subtract(){
     calculate = num1 - num2
-    result.textContent = calculate
+    result.textContent = ` Sum : ${calculate}`
 }
 function divide(){
     calculate = num1 / num2
-    result.textContent = calculate
+    result.textContent = ` Sum : ${calculate}`
 
 }
 function multiply(){
     calculate =  num1 * num2
-    result.textContent =  calculate
+    result.textContent =  ` Sum : ${calculate}`
 }
