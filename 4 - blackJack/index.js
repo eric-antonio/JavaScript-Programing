@@ -3,14 +3,15 @@ let secondCard = 7
 let sum =  firstCard + secondCard 
 let hasBlackJack = false
 let isAlive = true
+let message = ""
 
 if ( sum <= 20 ){
-    console.log("Do you want to draw a new card?😏")
+    message = "Do you want to draw a new card?😏"
 }else if(sum === 21){
-    console.log("Wohooo! You'v got BlackJack! 🥳")
+    message = "Wohooo! You'v got BlackJack! 🥳"
     hasBlackJack =  true
 }else{
-    console.log("You're out of the Game!🫡")
+    message = "You're out of the Game!🫡"
     isAlive = false
 }
  console.log("Win? : "+ hasBlackJack)
