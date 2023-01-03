@@ -1,26 +1,13 @@
-let myPoints = 3
-
-function add3Points(){
-    myPoints = myPoints +3
-}
-
-function removelPoint(){
-    myPoints -= 1
-}
+let featuredPosts = [
+    "Check out my Netflix Clone",
+     "Here's the code for my ",
+     "I've just relaunched my portfolio"
+    ]
 
 
-add3Points()
-removelPoint()
-add3Points()
-removelPoint()
-add3Points()
-
-console.log(myPoints)
-
-
-console.log("2" + 2) // 22
-console.log( 11 + 7 ) // 18
-console.log(6 + "5") // 65
-console.log("My points: " + 5 + 9 )
-console.log( 2 + 2) // 4
-console.log("11" + "14") // 1114
+let skils = [
+    "Python",
+    "JavaScript",
+    "Css"
+]
+console.log(featuredPosts)
