@@ -12,7 +12,7 @@ let cardsEl =  window.document.getElementById('cards-el')
 function startGame(){
     sumEl.textContent = `Sum: ${sum}`
     // cardsEl.textContent =  firstCard
-    cardsEl.textContent =  `${firstCard} - ${secondCard}`
+    cardsEl.textContent =  ` Cards: ${firstCard} - ${secondCard}`
 
     if ( sum <= 20 ){
         message = "Do you want to draw a new card?😏"
