@@ -14,6 +14,8 @@ if ( sum <= 20 ){
     message = "You're out of the Game!🫡"
     isAlive = false
 }
- console.log("Win? : "+ hasBlackJack)
- console.log(`In the game? : ` + isAlive)
- console.log(message)
+
+
+function startGame(){
+
+}
