@@ -15,3 +15,10 @@ h1{
     font-style: italic;
 
 }
+#stGame{
+    background-color: goldenrod;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px;
+}
