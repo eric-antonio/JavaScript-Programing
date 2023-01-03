@@ -15,12 +15,12 @@ function startGame(){
     cardsEl.textContent =  ` Cards: ${firstCard} - ${secondCard}`
 
     if ( sum <= 20 ){
-        message = "Do you want to draw a new card?😏"
+        message = "Do you want to draw a new card?"
     }else if(sum === 21){
-        message = "You'v got BlackJack! 🥳"
+        message = "You'v got BlackJack!"
         hasBlackJack =  true
     }else{
-        message = "You're out of the Game!🫡"
+        message = "You're out of the Game!"
         isAlive = false
     }
     
