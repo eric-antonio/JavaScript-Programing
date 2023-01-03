@@ -15,10 +15,12 @@ h1{
     font-style: italic;
 
 }
-#stGame{
+.btn{
     background-color: goldenrod;
     color: rgb(255, 255, 255);
     border: 0px;
     border-radius: 5px;
     padding: 5px;
+    margin: 10px;
+    width: 90px;
 }
