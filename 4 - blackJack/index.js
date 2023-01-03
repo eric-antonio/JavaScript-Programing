@@ -9,8 +9,11 @@ let sumEl =  window.document.getElementById('sum-el')
 let cardsEl =  window.document.getElementById('cards-el')
 
 
-
 function startGame(){
+    renderGame()
+}
+
+function renderGame(){
     sumEl.textContent = `Sum: ${sum}`
     // cardsEl.textContent =  firstCard
     cardsEl.textContent =  ` Cards: ${firstCard} - ${secondCard}`
@@ -31,6 +34,6 @@ function startGame(){
 function newCard(){
     let card =  3
     sum += card
-    startGame()
+    renderGame()
     
 }
