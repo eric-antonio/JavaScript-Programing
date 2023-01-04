@@ -12,6 +12,7 @@ let sumEl =  window.document.getElementById('sum-el')
 let cardsEl =  window.document.getElementById('cards-el')
 
  function getRandomCard(){
+    return 5
 
 }
 
