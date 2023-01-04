@@ -12,7 +12,14 @@ let sumEl =  window.document.getElementById('sum-el')
 let cardsEl =  window.document.getElementById('cards-el')
 
  function getRandomCard(){
+    
     let radom  = Math.floor( Math.random() * 13 ) + 1
+
+    if( radom  ===  1){
+        radom=   11
+    }else if( radom >= 11 && radom <=13){
+        radom = 10
+    }
     return radom
 
 }
