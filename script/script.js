@@ -11,7 +11,3 @@
 // }
 
 
-let card =[ 7,5,3]
-for(let i = 0; i < card.length ; i++){
-    console.log(card[i])
-}
