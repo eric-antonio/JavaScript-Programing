@@ -4,7 +4,7 @@ let featuredPosts = [
      "I've just relaunched my portfolio"
     ]
 
-
+    
 let skils = [
     "Python",
     "JavaScript",
