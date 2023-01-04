@@ -8,3 +8,5 @@ let newMessage = "Same Here!"
 messages.push(newMessage)
 
 console.log(messages)
+messages.pop()
+console.log()
