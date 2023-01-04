@@ -1,1 +1,3 @@
-let mySelf = ["Éric António", 23 , true ]
+let card =  [ 7, 4]
+card.push(6)
+console.log(card)
