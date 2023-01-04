@@ -1,10 +1,6 @@
-let randomNumber  = Math.floor( Math.random() * 6) + 1
-let flooredNuMBER = Math.floor(3.45632)
-
-
 function rollDice(){
-    return Math.floor( Math.random() * 6) + 1
+    let randomNumber = Math.floor( Math.random() * 6) + 1
+    return randomNumber
 }
 
-let diceValue = rollDice()
-console.log(diceValue)
+console.log(rollDice())
