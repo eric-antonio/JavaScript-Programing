@@ -11,10 +11,10 @@
 // }
 
 
-let setenceEl =  ["Hello" ,  "my ","name" ," is "," Eric"]
+let setenceEl =  ["Hello " , " my ","name" ," is "," Eric"]
 let greetingEl =  window.document.getElementById('greeting-el')
 
 
 for (let i = 0 ; i < setenceEl.length ;  i++){
-    greetingEl.textContent = setenceEl
+    greetingEl.textContent += setenceEl[i]
 }
