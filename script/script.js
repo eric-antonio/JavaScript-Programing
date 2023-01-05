@@ -1,6 +1,5 @@
-function rollDice(){
-    let randomNumber = Math.floor( Math.random() * 6) + 1
-    return randomNumber
+let hasCompletedCourse = true
+let givesCertificate =  true 
+function generateCertificate(){
+    console.log("Generating certificate.....")
 }
-
-console.log(rollDice())
