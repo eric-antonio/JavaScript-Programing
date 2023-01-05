@@ -9,13 +9,13 @@ let cardsEl =  window.document.getElementById('cards-el')
 let congratsEl = window.document.getElementById("congrats-el")
 
 let player = {
-    playerName :  "Éric",
-    playerChips : 2000
+    name :  "Éric",
+    chips : 2000
 }
 
 
 
-let playerEl = window.document.getElementById('player-el').textContent = `${playerName} :$${playerChips}`
+let playerEl = window.document.getElementById('player-el').textContent = `${player.name} :$${player.chips}`
 
  function getRandomCard(){
     
