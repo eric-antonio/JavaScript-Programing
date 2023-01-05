@@ -1,12 +1,7 @@
-let likesDocumentaries = false
-let likesStartups = false
-
-
-if(likesDocumentaries || likesStartups){
-    recommendMovie()
+let course =  {
+    title : "Learn CSS Grid for free.",
+    lessons: 16,
+    creator: "Per Harald Borgen",
+    length: 1,
+    level : "Intermediate"
 }
-
-
- function recommendMovie(){
-    console.log("Hey ,  check out this new film we think you will like! ")
- }
