@@ -8,8 +8,12 @@ let sumEl =  window.document.getElementById('sum-el')
 let cardsEl =  window.document.getElementById('cards-el')
 let congratsEl = window.document.getElementById("congrats-el")
 
-let playerName =  "Éric"
-let playerChips = 2000
+let player = {
+    playerName :  "Éric",
+    playerChips : 2000
+}
+
+
 
 let playerEl = window.document.getElementById('player-el').textContent = `${playerName} :$${playerChips}`
 
