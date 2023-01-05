@@ -6,7 +6,7 @@ let message = ""
 let messageEl = window.document.getElementById('message-el')
 let sumEl =  window.document.getElementById('sum-el')
 let cardsEl =  window.document.getElementById('cards-el')
-
+let congratsEl = window.document.getElementById("congrats-el")
  function getRandomCard(){
     
     let radom  = Math.floor( Math.random() * 13 ) + 1
@@ -42,6 +42,7 @@ function renderGame(){
         message = "Do you want to draw a new card?"
     }else if(sum === 21){
         message = "You'v got BlackJack!"
+        congratsEl.textContent ="🎉🎉🎉🎉"
         hasBlackJack =  true
     }else{
         message = "You're out of the Game!"
@@ -52,10 +53,14 @@ function renderGame(){
 }
 
 function newCard(){
-    let card =  getRandomCard()
-    sum += card
-    cards.push(card)
-    console.log(cards)
+
+    if(isAlive && hasBlackJack === false){
+        let card =  getRandomCard()
+        sum += card
+        cards.push(card)
+        console.log(cards)
+    }
+  
     renderGame()
     
 }
