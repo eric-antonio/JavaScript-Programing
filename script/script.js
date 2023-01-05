@@ -1,9 +1,24 @@
-let hasCompletedCourse = false
-let givesCertificate =  true 
+// let hasCompletedCourse = false
+// let givesCertificate =  true 
 
-if (hasCompletedCourse && givesCertificate ){
-   generateCertificate()
+// if (hasCompletedCourse && givesCertificate ){
+//    generateCertificate()
+// }
+
+
+// function generateCertificate(){
+//     console.log("Generating certificate.....")
+// }
+
+
+let hasSolvedChallenge =  false
+let hasHintsLeft = false 
+
+if( hasSolvedChallenge === false &&  hasHintsLeft === false){
+    showSolution()
 }
-function generateCertificate(){
-    console.log("Generating certificate.....")
+
+
+function showSolution(){
+    console.log("Showing the Solution .....")
 }
