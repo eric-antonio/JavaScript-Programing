@@ -1,9 +1,9 @@
 let player = {
     name :  "Éric",
-    chips : 2000,
- 
+    chips : 2000
+
 }
-player.sayHello()
+
 let cards = []
 let sum =  0
 let hasBlackJack = false
@@ -12,8 +12,6 @@ let message = ""
 let messageEl = window.document.getElementById('message-el')
 let sumEl =  window.document.getElementById('sum-el')
 let cardsEl =  window.document.getElementById('cards-el')
-let congratsEl = window.document.getElementById("congrats-el")
-
 
 let playerEl = window.document.getElementById('player-el')
 playerEl.textContent = `${player.name} :$${player.chips}`
@@ -51,12 +49,14 @@ function renderGame(){
 
     if ( sum <= 20 ){
         message = "Do you want to draw a new card?"
+        isAlive= true
     }else if(sum === 21){
         message = "You'v got BlackJack!"
-        congratsEl.textContent ="🎉🎉🎉🎉"
+        playerEl.textContent = `${player.name} :$${player.chips +=50}`
         hasBlackJack =  true
     }else{
         message = "You're out of the Game!"
+        playerEl.textContent = `${player.name} :$${player.chips -=50}`
         isAlive = false
     }
     
