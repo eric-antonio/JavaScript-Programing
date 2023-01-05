@@ -1,9 +1,7 @@
 let player = {
     name :  "Éric",
     chips : 2000,
-    sayHello: function(){
-        console.log("Heisann!")
-    }
+ 
 }
 player.sayHello()
 let cards = []
