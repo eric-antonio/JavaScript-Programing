@@ -1,7 +1,11 @@
 let player = {
     name :  "Éric",
-    chips : 2000
+    chips : 2000,
+    sayHello: function(){
+        console.log("Heisann!")
+    }
 }
+player.sayHello()
 let cards = []
 let sum =  0
 let hasBlackJack = false
@@ -58,7 +62,7 @@ function renderGame(){
         isAlive = false
     }
     
-    messageEl.textContent =  message
+    messageEl.textContent =  `${message}`
 }
 
 function newCard(){
