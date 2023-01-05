@@ -1,24 +1,12 @@
-let hasCompletedCourse = true
-let givesCertificate =  true 
+let likesDocumentaries = false
+let likesStartups = false
 
-if (hasCompletedCourse && givesCertificate ){
-   generateCertificate()
+
+if(likesDocumentaries || likesStartups){
+    recommendMovie()
 }
 
 
-function generateCertificate(){
-    console.log("Generating certificate.....")
-}
-
-
-// let hasSolvedChallenge =  false
-// let hasHintsLeft = false 
-
-// if( hasSolvedChallenge === false &&  hasHintsLeft === false){
-//     showSolution()
-// }
-
-
-// function showSolution(){
-//     console.log("Showing the Solution .....")
-// }
+ function recommendMovie(){
+    console.log("Hey ,  check out this new film we think you will like! ")
+ }
