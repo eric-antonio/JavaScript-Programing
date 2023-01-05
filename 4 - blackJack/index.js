@@ -1,3 +1,7 @@
+let player = {
+    name :  "Éric",
+    chips : 2000
+}
 let cards = []
 let sum =  0
 let hasBlackJack = false
@@ -8,14 +12,9 @@ let sumEl =  window.document.getElementById('sum-el')
 let cardsEl =  window.document.getElementById('cards-el')
 let congratsEl = window.document.getElementById("congrats-el")
 
-let player = {
-    name :  "Éric",
-    chips : 2000
-}
 
-
-
-let playerEl = window.document.getElementById('player-el').textContent = `${player.name} :$${player.chips}`
+let playerEl = window.document.getElementById('player-el')
+playerEl.textContent = `${player.name} :$${player.chips}`
 
  function getRandomCard(){
     
