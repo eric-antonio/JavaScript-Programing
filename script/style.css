@@ -26,6 +26,8 @@ main{
     background-color: rgb(250, 46, 46);
     margin-top: 20px;
     margin: 25px;
+    text-align: center;
+    padding-top: 5px;
     
 }
 p{
@@ -37,6 +39,8 @@ p{
     height: 30px;
     background-color: rgb(250, 162, 46);
     margin: 25px;
+    text-align: center;
+    padding-top: 5px;
 }
 
 section#s1{
