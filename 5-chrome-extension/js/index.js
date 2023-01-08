@@ -1,3 +1,3 @@
-function  save(){
+function  saveLead(){
     window.alert('oiii')
 }
