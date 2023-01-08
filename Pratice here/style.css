@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* Comfiguraçãoes padrão do Projecto! */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+main{
+    height: 100vh;
+    position: relative;
+    background-color: white;
+}
+#dv1{
+
+    width: 150px;
+    height: 30px;
+    background-color: rgba(250, 46, 46, 0.644);
+    margin-top: 20px;
+    margin: 25px;
+    text-align: center;
+    padding-top: 5px;
+    
+}
+p{
+    text-align: center;
+}
+#dv2{
+
+    width: 150px;
+    height: 30px;
+    background-color: rgba(250, 162, 46, 0.692);
+    margin: 25px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+section#s1{
+    width: 60vw;
+    height: 300px;
+    text-align: center;
+    padding-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:blanchedalmond;
+    border-radius: 5px;
+
+}
+
