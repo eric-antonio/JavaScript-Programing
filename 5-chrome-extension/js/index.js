@@ -1,4 +1,4 @@
-let myLeads = []
+let myLeads = [ "www.awesomeLead.com", "www.epicLead.com"," www.greatLead.com"]
 const inputEl = document.getElementById('input-el')
 const inputBtn =  window.document.getElementById("input-btn")
 const ulEl = window.document.getElementById("list-el")
@@ -9,5 +9,5 @@ inputBtn.addEventListener("click", function() {
 })
 
 for(let i = 0; i < myLeads.length; i++){
-    console.log(myLeads[i])
+    ulEl.textContent += `${myLeads[i]} `
 }
