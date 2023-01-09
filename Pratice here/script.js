@@ -1,6 +1,4 @@
-let container = window.document.getElementById("box")
-container.innerHTML = "<button onclick=buy()> Add to card </button>" 
+const recipient =  'james'
 
-function buy(){
-   container.innerHTML += "<p>Thank you for you'r order! </p>"
-}
+const email = `Hey ${recipient}! how ir going? Cheers Eric`
+console.log(email)
