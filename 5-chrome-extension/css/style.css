@@ -24,3 +24,15 @@ button{
     height: 27px;
     font-weight: bold;
 }
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+li{
+    margin-top: 5px;
+}
+li a{
+    color: green;
+}
