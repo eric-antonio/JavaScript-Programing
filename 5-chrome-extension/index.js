@@ -7,14 +7,11 @@ const ulEl = window.document.getElementById("list-el")
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
     inputEl.value = ""
-
     // ? Convertendo nosso Array em uma String?
     localStorage.setItem("myLeads", JSON.stringify(myLeads))
-
     renderLeads()
     console.log(localStorage.getItem("myLeads"))
 })
-
 
 function renderLeads(){
     let  listItems = ""
