@@ -1,7 +1,9 @@
 let myLeads = []
-const inputEl = window.document.getElementById('input-el')
+const inputEl = document.getElementById('input-el')
 const inputBtn =  window.document.getElementById("input-btn")
 const ulEl = window.document.getElementById("list-el")
+
+console.log(localStorage.getItem("myLeads"))
 
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
