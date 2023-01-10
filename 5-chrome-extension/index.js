@@ -1,16 +1,14 @@
 
-let myLeads = ["www.awesomeLeads.com"]
+let myLeads = []
 const inputEl = document.getElementById('input-el')
 const inputBtn =  window.document.getElementById("input-btn")
 const ulEl = window.document.getElementById("list-el")
 
-localStorage.setItem("site",  "www.google.com")
-console.log(localStorage.getItem("site"))
-localStorage.clear()
-
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
     inputEl.value = ""
+
+    localStorage.setItem("myLeads", JSON.stringify(myLeads))
 
     renderLeads()
 })
