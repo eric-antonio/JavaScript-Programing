@@ -1,16 +1,5 @@
 
-let myLeads = `["www.awesomeLeads.com"]`
-
-myLeads =  JSON.parse(myLeads)
-
-myLeads.push("www.epicLead.com")
-
-console.log(`Now has you can see: ${myLeads}`)
-
-myLeads = JSON.stringify(myLeads)
-console.log(typeof myLeads)
-
-
+let myLeads = ["www.awesomeLeads.com"]
 const inputEl = document.getElementById('input-el')
 const inputBtn =  window.document.getElementById("input-btn")
 const ulEl = window.document.getElementById("list-el")
@@ -21,7 +10,7 @@ localStorage.clear()
 
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
-    inputEl.value = ''
+    inputEl.value = ""
 
     renderLeads()
 })
