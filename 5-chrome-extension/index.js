@@ -3,7 +3,9 @@ const inputEl = document.getElementById('input-el')
 const inputBtn =  window.document.getElementById("input-btn")
 const ulEl = window.document.getElementById("list-el")
 
-console.log(localStorage.getItem("myLeads"))
+localStorage.setItem("site",  "www.google.com")
+console.log(localStorage.getItem("site"))
+localStorage.clear()
 
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
