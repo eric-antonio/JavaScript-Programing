@@ -4,10 +4,8 @@ let myLeads = `["www.awesomeLeads.com"]`
 //* Na linha a baixo convertemos para um array!
 myLeads = JSON.parse(myLeads)
 
-
 //* Depois que a variavel foi convertida já é posssivel adicionar novamente as funções de um Array !
 myLeads.push("www.epicLead.com")
-
 
 console.log(myLeads)
 
