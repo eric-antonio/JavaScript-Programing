@@ -1,9 +1,15 @@
 
-let myLeads = ["www.awesomeLeads.com"]
+let myLeads = `["www.awesomeLeads.com"]`
+
+myLeads =  JSON.parse(myLeads)
+
+myLeads.push("www.epicLead.com")
+
+console.log(`Now has you can see: ${myLeads}`)
 
 myLeads = JSON.stringify(myLeads)
+console.log(typeof myLeads)
 
-console.log(`Now it is a String:  ${myLeads}`)
 
 const inputEl = document.getElementById('input-el')
 const inputBtn =  window.document.getElementById("input-btn")
