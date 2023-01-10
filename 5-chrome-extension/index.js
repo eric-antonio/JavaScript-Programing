@@ -1,5 +1,5 @@
 let myLeads = []
-const inputEl = document.getElementById('input-el')
+const inputEl = window.document.getElementById('input-el')
 const inputBtn =  window.document.getElementById("input-btn")
 const ulEl = window.document.getElementById("list-el")
 
@@ -22,8 +22,6 @@ function renderLeads(){
                 </a>
             </li>
         `
-        
-
     }
     ulEl.innerHTML = listItems
 }
