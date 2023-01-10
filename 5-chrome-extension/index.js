@@ -1,13 +1,9 @@
-//* Tinhamos uma variavel do tipo String !
-let myLeads = `["www.awesomeLeads.com"]`
 
-//* Na linha a baixo convertemos para um array!
-myLeads = JSON.parse(myLeads)
+let myLeads = ["www.awesomeLeads.com"]
 
-//* Depois que a variavel foi convertida já é posssivel adicionar novamente as funções de um Array !
-myLeads.push("www.epicLead.com")
+myLeads = JSON.stringify(myLeads)
 
-console.log(myLeads)
+console.log(`Now it is a String:  ${myLeads}`)
 
 const inputEl = document.getElementById('input-el')
 const inputBtn =  window.document.getElementById("input-btn")
