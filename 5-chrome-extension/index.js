@@ -14,14 +14,14 @@ if(leadsFromLocalStorage){
 }
 
 // * Renders out  in a List the Leads!
-function renderLeads(){
+function renderLeads(leads){
     let  listItems = ""
-    for(let i = 0; i < myLeads.length; i++){
+    for(let i = 0; i < leads.length; i++){
         listItems += 
         `
             <li>
-                <a href='${myLeads[i]}' target='_blank'>
-                    ${myLeads[i]}
+                <a href='${leads[i]}' target='_blank'>
+                    ${leads[i]}
                 </a>
             </li>
         `
