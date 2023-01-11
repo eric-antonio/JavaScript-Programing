@@ -14,6 +14,8 @@ if(leadsFromLocalStorage){
 
 deleteEl.addEventListener("dblclick", function(){
     localStorage.clear()
+    myLeads = []
+    renderLeads()
 })
 
 //? Function that get the value from the user and converts into a string 
