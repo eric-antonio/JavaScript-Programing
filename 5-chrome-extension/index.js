@@ -5,7 +5,7 @@ let myLeads = []
 const inputEl = document.getElementById('input-el')
 const inputBtn =  window.document.getElementById("input-btn")
 const ulEl = window.document.getElementById("list-el")
-// * Get the leads from the local Storage
+// * Get the leads from the local Storage in line 21
 let leadsFromLocalStorage =  JSON.parse(localStorage.getItem("myLeads"))
 
 if(leadsFromLocalStorage){
