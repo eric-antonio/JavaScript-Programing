@@ -1,10 +1,9 @@
-//? null -> how you as a developer signalize emptiness
-// ? undefined -> how JavaScript signalizes emptiness
-
 let myLeads = []
 const inputEl = document.getElementById('input-el')
 const inputBtn =  window.document.getElementById("input-btn")
 const ulEl = window.document.getElementById("list-el")
+let deleteEl = window.document.getElementById("del-el")
+
 // * Get the leads from the local Storage in line 21
 let leadsFromLocalStorage =  JSON.parse(localStorage.getItem("myLeads"))
 
@@ -12,6 +11,9 @@ if(leadsFromLocalStorage){
     myLeads = leadsFromLocalStorage
     renderLeads()
 }
+
+deleteEl.addEventListener("dblclick", function(){
+    localStorage.clear()
 
 //? Function that get the value from the user and converts into a string 
 inputBtn.addEventListener("click", function() {
