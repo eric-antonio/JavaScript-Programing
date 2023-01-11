@@ -10,7 +10,7 @@ const leadsFromLocalStorage =  JSON.parse(localStorage.getItem("myLeads"))
 
 if(leadsFromLocalStorage){
     myLeads = leadsFromLocalStorage
-    renderLeads()
+    renderLeads(myLeads)
 }
 
 // * Renders out  in a List the Leads!
