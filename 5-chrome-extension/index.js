@@ -1,3 +1,5 @@
+//? null -> how you as a developer signalize emptiness
+// ? undefined -> how JavaScript signalizes emptiness
 
 let myLeads = []
 const inputEl = document.getElementById('input-el')
