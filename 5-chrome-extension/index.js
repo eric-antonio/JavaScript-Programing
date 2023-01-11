@@ -10,11 +10,11 @@ const leadsFromLocalStorage =  JSON.parse(localStorage.getItem("myLeads"))
 
 if(leadsFromLocalStorage){
     myLeads = leadsFromLocalStorage
-    renderLeads(myLeads)
+    render(myLeads)
 }
 
 // * Renders out  in a List the Leads!
-function renderLeads(leads){
+function render(leads){
     let  listItems = ""
     for(let i = 0; i < leads.length; i++){
         listItems += 
@@ -32,7 +32,7 @@ function renderLeads(leads){
 deleteEl.addEventListener("dblclick", function(){
     localStorage.clear()
     myLeads = []
-    renderLeads()
+    render(myLeads)
 })
 
 //? Function that get the value from the user and converts into a string 
@@ -41,7 +41,7 @@ inputBtn.addEventListener("click", function() {
     inputEl.value = ""
     // ? Saving  Data into local Storage and converting our Array in to a String Type of data 
     localStorage.setItem("myLeads", JSON.stringify(myLeads))
-    renderLeads()
+    render(myLeads)
 
 
 })
