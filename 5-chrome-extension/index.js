@@ -4,6 +4,11 @@ const inputEl = document.getElementById('input-el')
 const inputBtn =  window.document.getElementById("input-btn")
 const ulEl = window.document.getElementById("list-el")
 
+// * Get the leads from the local Storage
+
+let leadsFromLocalStorage =  JSON.parse(localStorage.getItem("myLeads"))
+
+
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
     inputEl.value = ""
@@ -11,6 +16,7 @@ inputBtn.addEventListener("click", function() {
     localStorage.setItem("myLeads", JSON.stringify(myLeads))
     renderLeads()
     console.log(localStorage.getItem("myLeads"))
+    console.log("Here!: "+leadsFromLocalStorage)
 })
 
 function renderLeads(){
