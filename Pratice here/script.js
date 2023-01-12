@@ -1,9 +1,6 @@
-let myCourses = ["Learn Css Animations ", "Ui Design Fundamentals" , "Intro to Clean Code"]
 
-function getCourses(arr){
-    for(let i = 0; i < arr.length; i++ ){
-        console.log(`* ${arr[i]}`)
-    }
-}
+let  name= 'Eric'
 
-getCourses(myCourses)
+let valor = localStorage.setItem("name",name)
+let res = localStorage.getItem("name")
+console.log(res)
