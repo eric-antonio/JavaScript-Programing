@@ -1,5 +1,4 @@
 let myLeads = []
-let oldLeads = []
 const inputEl = document.getElementById('input-el')
 const inputBtn =  window.document.getElementById("input-btn")
 const ulEl = window.document.getElementById("list-el")
