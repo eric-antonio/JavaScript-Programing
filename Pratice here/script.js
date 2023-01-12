@@ -1,14 +1,9 @@
-const player = "Eric"
-const opponent = "Nick"
-const  game = "AmazingFighter"
-let points = 0
-let hasWon = false
+let myCourses = ["Learn Css Animations ", "Ui Design Fundamentals" , "Intro to Clean Code"]
 
-points += 100
-hasWon =  true
-
-if(hasWon){
-    console.log(`${player} got ${points} points and won the ${game} Game!`)
-}else{
-    console.log(`The Winner is ${opponent}! and ${player} lost the game.`)
+function getCourses(arr){
+    for(let i = 0; i < arr.length; i++ ){
+        console.log(`* ${arr[i]}`)
+    }
 }
+
+getCourses(myCourses)
