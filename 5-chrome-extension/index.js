@@ -18,13 +18,16 @@ if(leadsFromLocalStorage){
 }
 
 
-tabBtn.addEventListener("dblclick", function(){
+tabBtn.addEventListener("click", function(){
     console.log(tabs[0].url)
+    myLeads.push(tabs[0].url)
+    localStorage.setItem("tab", JSON.stringify(tabs[0].url))
+    render(myLeads)
 })
 
 
 
-// * Renders out  in a List the Leads!
+// * Renders out the Leads!
 function render(leads){
     let  listItems = ""
     for(let i = 0; i < leads.length; i++){
