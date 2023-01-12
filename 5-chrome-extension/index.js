@@ -18,7 +18,13 @@ if(leadsFromLocalStorage){
 }
 
 
+// ? Gets the leads that are storage at the Array Obj and parse it to a string  saving in localStorage
 tabBtn.addEventListener("click", function(){
+
+    // chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+   
+    // });
+
     myLeads.push(tabs[0].url)
     localStorage.setItem("myLeads", JSON.stringify(myLeads))
     render(myLeads)
