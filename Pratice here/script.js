@@ -1,19 +1,17 @@
+const imgs =[
+    "user.png",
+    "user.png",
+    "user.png"
+]
 
+const container = window.document.getElementById("container")
 
-function generateSentence(desc, arr){
-    let baseString =  ` The ${arr.length} ${desc} `
-    const lastIndex = arr.length - 1
-    for(let i = 0 ; i < arr.length; i++){
-        if(i === lastIndex){
-            baseString += arr[i]
-        }else{
-            baseString += arr[i] + ', '
-        }
-        
+function renderImg(){
+    let imgDom =""
+    for(let i =0 ;i < imgs.length; i++ ){
+        imgDom += `<img src='${imgs[i]}' alt="">`
     }
-    return baseString
 
+    container.innerHTML = imgDom
 }
-
-const sentence =  generateSentence("Highest mountains",["Everest " , "k2", "Kilimanjaro"])
-console.log(sentence)
+renderImg()
