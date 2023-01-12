@@ -1,7 +1,7 @@
 
 {
     "manifest_version": 3,
-    "version": "1.0",
+    "version": "2.1",
     "name": " Éric Leads tracker",
     "action": {
         "default_popup": "index.html",
