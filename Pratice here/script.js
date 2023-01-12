@@ -1,5 +1,5 @@
-let player = "Eric"
-let opponent = "Nick"
+const player = "Eric"
+const opponent = "Nick"
 const  game = "AmazingFighter"
 let points = 0
 let hasWon = false
