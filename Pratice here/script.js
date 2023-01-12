@@ -1,15 +1,19 @@
-let largestCountries = ["China", "USA", "INDIA"]
 
-let fruits = ["Apples", "banana's"]
 
 function generateSentence(desc, arr){
-
-    if(desc === "largest countries"){
-        console.log(` The 3 largest countries are ${largestCountries}`)
-    }else if(desc === "best fruits"){
-        console.log(`The 2 best fruits are ${fruits}`)
+    let baseString =  ` The ${arr.length} ${desc} `
+    const lastIndex = arr.length - 1
+    for(let i = 0 ; i < arr.length; i++){
+        if(i === lastIndex){
+            baseString += arr[i]
+        }else{
+            baseString += arr[i] + ', '
+        }
+        
     }
+    return baseString
 
 }
 
-generateSentence("best fruits", largestCountries)
+const sentence =  generateSentence("Highest mountains",["Everest " , "k2", "Kilimanjaro"])
+console.log(sentence)
