@@ -1,8 +1,14 @@
-let cards = [10,3,4,5,5]
-function getFirst(a){
+let player = "Eric"
+let opponent = "Nick"
+const  game = "AmazingFighter"
+let points = 0
+let hasWon = false
 
-    return a[0]
+points += 100
+hasWon =  true
+
+if(hasWon){
+    console.log(`${player} got ${points} points and won the ${game} Game!`)
+}else{
+    console.log(`The Winner is ${opponent}! and ${player} lost the game.`)
 }
-
-let firstCard =  getFirst(cards)
-console.log(firstCard)
