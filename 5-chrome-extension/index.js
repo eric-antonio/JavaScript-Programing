@@ -19,7 +19,7 @@ if(leadsFromLocalStorage){
 
 
 tabBtn.addEventListener("dblclick", function(){
-    console.log("I'm here!")
+    console.log(tabs[0].url)
 })
 
 
