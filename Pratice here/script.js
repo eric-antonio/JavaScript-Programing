@@ -1,5 +1,5 @@
 const welcomeEl = window.document.getElementById("welcome-el")
-function greetUser(greeting){
-    welcomeEl.textContent = ` ${greeting}  Eric Ivan`
+function greetUser(greeting, name){
+    welcomeEl.textContent = ` ${greeting} ${name}👍`
 }
-greetUser("Welcome back")
+greetUser("Welcome back" ,  "Eric")
