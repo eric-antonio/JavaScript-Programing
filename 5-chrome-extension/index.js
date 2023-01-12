@@ -1,9 +1,4 @@
 let myLeads = []
-const tabs =[
-    {
-        url:'www.linkedin.com/in/eric-antónio'
-    }
-]
 const inputEl = document.getElementById('input-el')
 const inputBtn =  window.document.getElementById("input-btn")
 const ulEl = window.document.getElementById("list-el")
@@ -20,10 +15,6 @@ if(leadsFromLocalStorage){
 
 // ? Gets the leads that are storage at the Array Obj and parse it to a string  saving in localStorage
 tabBtn.addEventListener("click", function(){
-
-    // chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-   
-    // });
 
     chrome.tabs.query({active:true , currentWindow: true}, function(tabs){
         myLeads.push(tabs[0].url)
