@@ -20,10 +20,9 @@ if(leadsFromLocalStorage){
 
 tabBtn.addEventListener("click", function(){
     myLeads.push(tabs[0].url)
-    localStorage.setItem("tab", JSON.stringify(tabs[0].url))
+    localStorage.setItem("myLeads", JSON.stringify(myLeads))
     render(myLeads)
 })
-
 
 
 // * Renders out the Leads!
