@@ -2,9 +2,8 @@ let myLeads = []
 const inputEl = document.getElementById('input-el')
 const inputBtn =  window.document.getElementById("input-btn")
 const ulEl = window.document.getElementById("list-el")
-let deleteEl = window.document.getElementById("del-el")
-let tabBtn = window.document.getElementById('tab-btn')
-// * Get the leads from the local Storage in line 21
+const deleteEl = window.document.getElementById("del-el")
+const tabBtn = window.document.getElementById('tab-btn')
 const leadsFromLocalStorage =  JSON.parse(localStorage.getItem("myLeads"))
 
 if(leadsFromLocalStorage){
@@ -24,7 +23,6 @@ tabBtn.addEventListener("click", function(){
     })
     
 })
-
 
 // * Renders out the Leads!
 function render(leads){
