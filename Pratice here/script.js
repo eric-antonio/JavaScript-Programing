@@ -1,16 +1,15 @@
-let data = [
-    {
-        player: "Jane",
-        score: 52
-    }, 
-    {
-        player: "Mark",
-        score: 41
-    }
-]
+let largestCountries = ["China", "USA", "INDIA"]
 
-let btnEl = window.document.getElementById('btn')
-let pEl =  window.document.getElementById('p-el')
-btnEl.addEventListener("click", function(){
-    pEl.textContent = ` ${data[0].player} ${data[0].score}`
-})
+let fruits = ["Apples", "banana's"]
+
+function generateSentence(desc, arr){
+
+    if(desc === "largest countries"){
+        console.log(` The 3 largest countries are ${largestCountries}`)
+    }else if(desc === "best fruits"){
+        console.log(`The 2 best fruits are ${fruits}`)
+    }
+
+}
+
+generateSentence("best fruits", largestCountries)
